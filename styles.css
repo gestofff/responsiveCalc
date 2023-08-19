@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #642b73, #c6426e);
+    font-family: sans-serif;
+}
+
+main {
+    margin: 0;
+}
+
+.calculator {
+    margin: 50px auto;
+    max-width: 300px;
+    max-height: 600px;
+    background-color: #171717;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: #171717 0px 0px 20px;
+    
+}
+
+.display {
+    height: 120px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    border-bottom: rgba(255, 255, 255, 0.2) solid 1px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap : 10px;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+.button {
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+.color-orange {
+    color: orange;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+div[class="button"]:hover, .color-orange:hover {
+    background-color: rgb(70, 70, 70);
+    transition: ease-in 0.2s;
+}
+
+.bg-orange:hover {
+    filter: brightness(120%);
+    transition: ease-in 0.2s;
+}
+
+.button:active {
+    filter: brightness(90%);
+}
+
+.display p {
+    color: white;
+    font-size: 4rem;
+    margin: 0;
+    text-align: right;
+}
+
+.signature {
+    color: white;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: right;
+    opacity: 10%;
+    margin: 0;
+    margin-top: 15px;
+}
